@@ -1,0 +1,993 @@
+2024-05-23T11:40:23.970+03:00  INFO 17392 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 17392 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T11:40:23.974+03:00  INFO 17392 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T11:40:25.382+03:00  INFO 17392 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T11:40:25.544+03:00  INFO 17392 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 103 ms. Found 3 JPA repository interfaces.
+2024-05-23T11:40:26.487+03:00  INFO 17392 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T11:40:26.503+03:00  INFO 17392 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T11:40:26.504+03:00  INFO 17392 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T11:40:26.613+03:00  INFO 17392 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T11:40:26.614+03:00  INFO 17392 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2491 ms
+2024-05-23T11:40:27.419+03:00  INFO 17392 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T11:40:27.464+03:00  INFO 17392 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T11:40:27.790+03:00  INFO 17392 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4df7d9ee
+2024-05-23T11:40:27.792+03:00  INFO 17392 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T11:40:29.771+03:00  INFO 17392 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:40:30.267+03:00  INFO 17392 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T11:40:30.934+03:00  WARN 17392 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T11:40:31.160+03:00 DEBUG 17392 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T11:40:31.437+03:00 DEBUG 17392 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T11:40:31.517+03:00 DEBUG 17392 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T11:40:31.796+03:00 DEBUG 17392 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T11:40:32.489+03:00  INFO 17392 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T11:40:34.850+03:00  INFO 17392 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T11:40:34.851+03:00  INFO 17392 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 11.855 seconds (process running for 12.679)
+2024-05-23T11:41:08.904+03:00  INFO 17392 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T11:41:49.062+03:00  INFO 17392 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:41:49.069+03:00  INFO 17392 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T11:41:49.100+03:00  INFO 17392 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T11:41:57.521+03:00  INFO 8036 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 8036 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T11:41:57.525+03:00  INFO 8036 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T11:41:58.720+03:00  INFO 8036 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T11:41:58.852+03:00  INFO 8036 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 3 JPA repository interfaces.
+2024-05-23T11:42:00.148+03:00  INFO 8036 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T11:42:00.168+03:00  INFO 8036 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T11:42:00.170+03:00  INFO 8036 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T11:42:00.341+03:00  INFO 8036 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T11:42:00.342+03:00  INFO 8036 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2713 ms
+2024-05-23T11:42:01.096+03:00  INFO 8036 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T11:42:01.140+03:00  INFO 8036 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T11:42:01.824+03:00  INFO 8036 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b6c2be6
+2024-05-23T11:42:01.827+03:00  INFO 8036 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T11:42:03.717+03:00  INFO 8036 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:42:04.062+03:00  INFO 8036 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T11:42:04.561+03:00  WARN 8036 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T11:42:04.703+03:00 DEBUG 8036 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T11:42:04.957+03:00 DEBUG 8036 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T11:42:05.008+03:00 DEBUG 8036 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T11:42:05.061+03:00 DEBUG 8036 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T11:42:05.304+03:00  INFO 8036 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T11:42:07.321+03:00  INFO 8036 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T11:42:07.322+03:00  INFO 8036 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 10.45 seconds (process running for 11.164)
+2024-05-23T11:42:30.685+03:00  INFO 8036 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:42:30.692+03:00  INFO 8036 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T11:42:30.706+03:00  INFO 8036 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T11:42:36.865+03:00  INFO 18584 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 18584 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T11:42:36.868+03:00  INFO 18584 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T11:42:38.101+03:00  INFO 18584 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T11:42:38.235+03:00  INFO 18584 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 3 JPA repository interfaces.
+2024-05-23T11:42:39.215+03:00  INFO 18584 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T11:42:39.244+03:00  INFO 18584 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T11:42:39.245+03:00  INFO 18584 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T11:42:39.365+03:00  INFO 18584 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T11:42:39.366+03:00  INFO 18584 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2396 ms
+2024-05-23T11:42:40.146+03:00  INFO 18584 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T11:42:40.176+03:00  INFO 18584 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T11:42:40.487+03:00  INFO 18584 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f6494c0
+2024-05-23T11:42:40.489+03:00  INFO 18584 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T11:42:42.105+03:00  INFO 18584 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:42:42.392+03:00  INFO 18584 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T11:42:42.886+03:00  WARN 18584 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T11:42:43.017+03:00 DEBUG 18584 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T11:42:43.169+03:00 DEBUG 18584 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T11:42:43.218+03:00 DEBUG 18584 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T11:42:43.343+03:00 DEBUG 18584 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T11:42:43.598+03:00  INFO 18584 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T11:42:44.770+03:00  INFO 18584 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T11:42:44.772+03:00  INFO 18584 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 8.716 seconds (process running for 9.365)
+2024-05-23T11:43:11.848+03:00  INFO 18584 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T11:43:48.787+03:00  INFO 18584 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:43:48.791+03:00  INFO 18584 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T11:43:48.804+03:00  INFO 18584 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T11:43:54.016+03:00  INFO 21568 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 21568 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T11:43:54.020+03:00  INFO 21568 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T11:43:55.275+03:00  INFO 21568 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T11:43:55.390+03:00  INFO 21568 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 3 JPA repository interfaces.
+2024-05-23T11:43:56.398+03:00  INFO 21568 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T11:43:56.413+03:00  INFO 21568 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T11:43:56.414+03:00  INFO 21568 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T11:43:56.514+03:00  INFO 21568 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T11:43:56.514+03:00  INFO 21568 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2347 ms
+2024-05-23T11:43:57.320+03:00  INFO 21568 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T11:43:57.358+03:00  INFO 21568 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T11:43:57.660+03:00  INFO 21568 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16d41725
+2024-05-23T11:43:57.662+03:00  INFO 21568 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T11:43:59.375+03:00  INFO 21568 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:43:59.613+03:00  INFO 21568 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T11:44:00.186+03:00  WARN 21568 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T11:44:00.337+03:00 DEBUG 21568 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T11:44:00.493+03:00 DEBUG 21568 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T11:44:00.550+03:00 DEBUG 21568 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T11:44:00.625+03:00 DEBUG 21568 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T11:44:00.885+03:00  INFO 21568 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T11:44:02.158+03:00  INFO 21568 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T11:44:02.160+03:00  INFO 21568 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 8.794 seconds (process running for 9.461)
+2024-05-23T11:44:33.527+03:00  INFO 21568 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T11:44:56.517+03:00  INFO 21568 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:44:56.522+03:00  INFO 21568 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T11:44:56.534+03:00  INFO 21568 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T11:45:02.208+03:00  INFO 16040 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 16040 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T11:45:02.212+03:00  INFO 16040 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T11:45:03.450+03:00  INFO 16040 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T11:45:03.585+03:00  INFO 16040 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 3 JPA repository interfaces.
+2024-05-23T11:45:04.534+03:00  INFO 16040 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T11:45:04.551+03:00  INFO 16040 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T11:45:04.552+03:00  INFO 16040 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T11:45:04.640+03:00  INFO 16040 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T11:45:04.641+03:00  INFO 16040 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2299 ms
+2024-05-23T11:45:05.510+03:00  INFO 16040 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T11:45:05.548+03:00  INFO 16040 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T11:45:05.866+03:00  INFO 16040 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@38c761e9
+2024-05-23T11:45:05.868+03:00  INFO 16040 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T11:45:07.637+03:00  INFO 16040 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:45:08.150+03:00  INFO 16040 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T11:45:09.782+03:00  WARN 16040 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T11:45:10.283+03:00 DEBUG 16040 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T11:45:10.592+03:00 DEBUG 16040 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T11:45:10.711+03:00 DEBUG 16040 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T11:45:10.864+03:00 DEBUG 16040 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T11:45:11.449+03:00  INFO 16040 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T11:45:14.101+03:00  INFO 16040 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T11:45:14.104+03:00  INFO 16040 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 12.59 seconds (process running for 13.216)
+2024-05-23T11:45:45.652+03:00  INFO 16040 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T11:46:18.137+03:00  INFO 16040 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:46:18.141+03:00  INFO 16040 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T11:46:18.157+03:00  INFO 16040 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T11:46:24.290+03:00  INFO 9956 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 9956 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T11:46:24.294+03:00  INFO 9956 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T11:46:25.644+03:00  INFO 9956 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T11:46:25.776+03:00  INFO 9956 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 3 JPA repository interfaces.
+2024-05-23T11:46:26.847+03:00  INFO 9956 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T11:46:26.865+03:00  INFO 9956 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T11:46:26.866+03:00  INFO 9956 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T11:46:26.969+03:00  INFO 9956 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T11:46:26.970+03:00  INFO 9956 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2547 ms
+2024-05-23T11:46:27.805+03:00  INFO 9956 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T11:46:27.834+03:00  INFO 9956 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T11:46:28.190+03:00  INFO 9956 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cee2e10
+2024-05-23T11:46:28.193+03:00  INFO 9956 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T11:46:30.036+03:00  INFO 9956 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:46:30.361+03:00  INFO 9956 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T11:46:31.006+03:00  WARN 9956 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T11:46:31.268+03:00 DEBUG 9956 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T11:46:31.496+03:00 DEBUG 9956 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T11:46:31.577+03:00 DEBUG 9956 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T11:46:31.636+03:00 DEBUG 9956 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T11:46:31.898+03:00  INFO 9956 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T11:46:34.084+03:00  INFO 9956 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T11:46:34.086+03:00  INFO 9956 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 10.524 seconds (process running for 11.213)
+2024-05-23T11:47:00.913+03:00  INFO 9956 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T11:50:31.137+03:00  INFO 9956 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:50:31.144+03:00  INFO 9956 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T11:50:31.178+03:00  INFO 9956 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T11:50:37.379+03:00  INFO 4324 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 4324 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T11:50:37.383+03:00  INFO 4324 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T11:50:38.644+03:00  INFO 4324 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T11:50:38.778+03:00  INFO 4324 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 3 JPA repository interfaces.
+2024-05-23T11:50:40.032+03:00  INFO 4324 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T11:50:40.051+03:00  INFO 4324 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T11:50:40.051+03:00  INFO 4324 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T11:50:40.143+03:00  INFO 4324 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T11:50:40.144+03:00  INFO 4324 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2618 ms
+2024-05-23T11:50:40.932+03:00  INFO 4324 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T11:50:40.971+03:00  INFO 4324 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T11:50:41.437+03:00  INFO 4324 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@38c761e9
+2024-05-23T11:50:41.441+03:00  INFO 4324 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T11:50:43.500+03:00  INFO 4324 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:50:43.754+03:00  INFO 4324 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T11:50:44.471+03:00  WARN 4324 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T11:50:44.646+03:00 DEBUG 4324 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T11:50:44.961+03:00 DEBUG 4324 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T11:50:45.058+03:00 DEBUG 4324 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T11:50:45.157+03:00 DEBUG 4324 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T11:50:45.638+03:00  INFO 4324 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T11:50:48.582+03:00  INFO 4324 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T11:50:48.585+03:00  INFO 4324 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 11.919 seconds (process running for 12.696)
+2024-05-23T11:51:21.166+03:00  INFO 4324 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T11:53:35.450+03:00  INFO 4324 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:53:35.457+03:00  INFO 4324 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T11:53:35.482+03:00  INFO 4324 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T11:53:41.602+03:00  INFO 12584 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 12584 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T11:53:41.604+03:00  INFO 12584 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T11:53:42.830+03:00  INFO 12584 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T11:53:42.980+03:00  INFO 12584 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135 ms. Found 3 JPA repository interfaces.
+2024-05-23T11:53:44.081+03:00  INFO 12584 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T11:53:44.100+03:00  INFO 12584 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T11:53:44.101+03:00  INFO 12584 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T11:53:44.212+03:00  INFO 12584 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T11:53:44.213+03:00  INFO 12584 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2495 ms
+2024-05-23T11:53:44.928+03:00  INFO 12584 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T11:53:44.961+03:00  INFO 12584 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T11:53:45.363+03:00  INFO 12584 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c5e69a5
+2024-05-23T11:53:45.365+03:00  INFO 12584 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T11:53:47.128+03:00  INFO 12584 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:53:47.512+03:00  INFO 12584 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T11:53:48.002+03:00  WARN 12584 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T11:53:48.293+03:00 DEBUG 12584 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T11:53:48.449+03:00 DEBUG 12584 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T11:53:48.510+03:00 DEBUG 12584 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T11:53:48.569+03:00 DEBUG 12584 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T11:53:48.832+03:00  INFO 12584 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T11:53:52.069+03:00  INFO 12584 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T11:53:52.071+03:00  INFO 12584 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 11.188 seconds (process running for 11.764)
+2024-05-23T11:54:07.735+03:00  INFO 12584 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:54:07.741+03:00  INFO 12584 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T11:54:07.769+03:00  INFO 12584 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T11:57:28.109+03:00  INFO 6884 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 6884 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T11:57:28.113+03:00  INFO 6884 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T11:57:29.534+03:00  INFO 6884 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T11:57:29.682+03:00  INFO 6884 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 3 JPA repository interfaces.
+2024-05-23T11:57:30.800+03:00  INFO 6884 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T11:57:30.828+03:00  INFO 6884 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T11:57:30.829+03:00  INFO 6884 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T11:57:30.965+03:00  INFO 6884 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T11:57:30.966+03:00  INFO 6884 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2756 ms
+2024-05-23T11:57:31.650+03:00  INFO 6884 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T11:57:31.685+03:00  INFO 6884 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T11:57:32.044+03:00  INFO 6884 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6b5c134e
+2024-05-23T11:57:32.046+03:00  INFO 6884 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T11:57:34.372+03:00  INFO 6884 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T11:57:34.647+03:00  INFO 6884 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T11:57:35.129+03:00  WARN 6884 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T11:57:35.286+03:00 DEBUG 6884 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T11:57:35.562+03:00 DEBUG 6884 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T11:57:35.628+03:00 DEBUG 6884 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T11:57:35.686+03:00 DEBUG 6884 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T11:57:35.941+03:00  INFO 6884 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T11:57:38.213+03:00  INFO 6884 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T11:57:38.216+03:00  INFO 6884 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 10.727 seconds (process running for 11.416)
+2024-05-23T11:58:15.731+03:00  INFO 6884 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T12:03:09.642+03:00  INFO 6884 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:03:09.651+03:00  INFO 6884 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:03:09.706+03:00  INFO 6884 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:09:19.682+03:00  INFO 14688 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 14688 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:09:19.685+03:00  INFO 14688 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:09:20.906+03:00  INFO 14688 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:09:21.047+03:00  INFO 14688 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:09:21.976+03:00  INFO 14688 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:09:21.997+03:00  INFO 14688 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:09:21.997+03:00  INFO 14688 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:09:22.091+03:00  INFO 14688 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:09:22.091+03:00  INFO 14688 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2297 ms
+2024-05-23T12:09:22.831+03:00  INFO 14688 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:09:22.857+03:00  INFO 14688 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:09:23.199+03:00  INFO 14688 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@56c0a61e
+2024-05-23T12:09:23.201+03:00  INFO 14688 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:09:24.729+03:00  INFO 14688 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:09:24.929+03:00  INFO 14688 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T12:09:25.423+03:00  WARN 14688 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:09:25.561+03:00 DEBUG 14688 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:09:25.833+03:00 DEBUG 14688 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:09:25.900+03:00 DEBUG 14688 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:09:25.953+03:00 DEBUG 14688 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:09:26.193+03:00  INFO 14688 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:09:29.237+03:00  INFO 14688 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:09:29.239+03:00  INFO 14688 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 10.204 seconds (process running for 10.799)
+2024-05-23T12:09:38.205+03:00  INFO 14688 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:09:38.216+03:00  INFO 14688 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:09:38.255+03:00  INFO 14688 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:09:48.451+03:00  INFO 14568 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 14568 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:09:48.454+03:00  INFO 14568 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:09:49.661+03:00  INFO 14568 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:09:49.797+03:00  INFO 14568 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:09:50.798+03:00  INFO 14568 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:09:50.814+03:00  INFO 14568 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:09:50.815+03:00  INFO 14568 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:09:50.915+03:00  INFO 14568 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:09:50.916+03:00  INFO 14568 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2355 ms
+2024-05-23T12:09:51.693+03:00  INFO 14568 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:09:51.735+03:00  INFO 14568 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:09:52.025+03:00  INFO 14568 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1cee2e10
+2024-05-23T12:09:52.027+03:00  INFO 14568 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:09:53.616+03:00  INFO 14568 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:09:53.863+03:00  INFO 14568 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T12:09:54.420+03:00  WARN 14568 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:09:54.590+03:00 DEBUG 14568 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:09:54.758+03:00 DEBUG 14568 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:09:54.807+03:00 DEBUG 14568 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:09:54.859+03:00 DEBUG 14568 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:09:55.187+03:00  INFO 14568 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:09:57.115+03:00  INFO 14568 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:09:57.116+03:00  INFO 14568 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 9.307 seconds (process running for 9.904)
+2024-05-23T12:10:16.481+03:00  INFO 14568 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:10:16.485+03:00  INFO 14568 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:10:16.497+03:00  INFO 14568 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:12:15.747+03:00  INFO 4988 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 4988 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:12:15.750+03:00  INFO 4988 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:12:16.975+03:00  INFO 4988 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:12:17.094+03:00  INFO 4988 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:12:18.055+03:00  INFO 4988 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:12:18.075+03:00  INFO 4988 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:12:18.075+03:00  INFO 4988 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:12:18.161+03:00  INFO 4988 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:12:18.162+03:00  INFO 4988 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2313 ms
+2024-05-23T12:12:18.960+03:00  INFO 4988 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:12:19.001+03:00  INFO 4988 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:12:19.309+03:00  INFO 4988 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@c472300
+2024-05-23T12:12:19.312+03:00  INFO 4988 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:12:20.821+03:00  INFO 4988 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:12:21.055+03:00  INFO 4988 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T12:12:21.561+03:00  WARN 4988 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:12:21.703+03:00 DEBUG 4988 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:12:21.854+03:00 DEBUG 4988 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:12:21.951+03:00 DEBUG 4988 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:12:22.012+03:00 DEBUG 4988 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:12:22.263+03:00  INFO 4988 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:12:25.045+03:00  INFO 4988 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:12:25.047+03:00  INFO 4988 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 9.931 seconds (process running for 10.49)
+2024-05-23T12:12:53.372+03:00  INFO 4988 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T12:12:53.387+03:00 ERROR 4988 --- [TelegramBot] [pool-3-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ОШИБКА: отношение "users" не существует
+  Позиция: 58
+2024-05-23T12:12:55.882+03:00  INFO 4988 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:12:55.890+03:00  INFO 4988 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:12:55.935+03:00  INFO 4988 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:13:02.666+03:00  INFO 26544 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 26544 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:13:02.670+03:00  INFO 26544 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:13:04.156+03:00  INFO 26544 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:13:04.408+03:00  INFO 26544 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 203 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:13:05.512+03:00  INFO 26544 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:13:05.530+03:00  INFO 26544 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:13:05.530+03:00  INFO 26544 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:13:05.741+03:00  INFO 26544 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:13:05.745+03:00  INFO 26544 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2935 ms
+2024-05-23T12:13:06.064+03:00  INFO 26544 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:13:06.379+03:00  INFO 26544 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7061622
+2024-05-23T12:13:06.382+03:00  INFO 26544 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:13:06.862+03:00  INFO 26544 --- [TelegramBot] [main] liquibase.database                       : Set default schema name to public
+2024-05-23T12:13:07.719+03:00  INFO 26544 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:13:07.842+03:00  INFO 26544 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-23T12:13:07.844+03:00  INFO 26544 --- [TelegramBot] [main] liquibase.command                        : Using deploymentId: 6455587843
+2024-05-23T12:13:07.846+03:00  INFO 26544 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:13:07.894+03:00 ERROR 26544 --- [TelegramBot] [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-createTable.yaml::1::your_liquibase_username encountered an exception.
+2024-05-23T12:13:07.898+03:00  INFO 26544 --- [TelegramBot] [main] liquibase.command                        : Update command encountered an exception.
+2024-05-23T12:13:07.902+03:00  INFO 26544 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-23T12:13:07.904+03:00  INFO 26544 --- [TelegramBot] [main] liquibase.command                        : Command execution complete
+2024-05-23T12:13:07.907+03:00  WARN 26544 --- [TelegramBot] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/db.changelog-createTable.yaml::1::your_liquibase_username:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: тип "long" не существует
+  Позиция: 31 [Failed SQL: (0) CREATE TABLE public.users (id LONG GENERATED BY DEFAULT AS IDENTITY NOT NULL, users_name VARCHAR(100) NOT NULL, last_message_at TEXT NOT NULL, CONSTRAINT users_pkey PRIMARY KEY (id))]
+2024-05-23T12:13:07.908+03:00  INFO 26544 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:13:07.920+03:00  INFO 26544 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:13:07.928+03:00  INFO 26544 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-05-23T12:13:07.993+03:00  INFO 26544 --- [TelegramBot] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-23T12:13:08.069+03:00 ERROR 26544 --- [TelegramBot] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/db.changelog-createTable.yaml::1::your_liquibase_username:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: тип "long" не существует
+  Позиция: 31 [Failed SQL: (0) CREATE TABLE public.users (id LONG GENERATED BY DEFAULT AS IDENTITY NOT NULL, users_name VARCHAR(100) NOT NULL, last_message_at TEXT NOT NULL, CONSTRAINT users_pkey PRIMARY KEY (id))]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1234) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:952) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.6.jar:6.1.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.5.jar:3.2.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.5.jar:3.2.5]
+	at com.example.TelegramBot.TelegramBotApplication.main(TelegramBotApplication.java:10) ~[classes/:na]
+Caused by: liquibase.exception.CommandExecutionException: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/db.changelog-createTable.yaml::1::your_liquibase_username:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: тип "long" не существует
+  Позиция: 31 [Failed SQL: (0) CREATE TABLE public.users (id LONG GENERATED BY DEFAULT AS IDENTITY NOT NULL, users_name VARCHAR(100) NOT NULL, last_message_at TEXT NOT NULL, CONSTRAINT users_pkey PRIMARY KEY (id))]
+	at liquibase.command.CommandScope.execute(CommandScope.java:237) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:222) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:184) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:193) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:183) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:162) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Liquibase.runInScope(Liquibase.java:1371) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:211) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Liquibase.update(Liquibase.java:193) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:331) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:286) ~[liquibase-core-4.24.0.jar:na]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833) ~[spring-beans-6.1.6.jar:6.1.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782) ~[spring-beans-6.1.6.jar:6.1.6]
+	... 18 common frames omitted
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/db.changelog-createTable.yaml::1::your_liquibase_username:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: тип "long" не существует
+  Позиция: 31 [Failed SQL: (0) CREATE TABLE public.users (id LONG GENERATED BY DEFAULT AS IDENTITY NOT NULL, users_name VARCHAR(100) NOT NULL, last_message_at TEXT NOT NULL, CONSTRAINT users_pkey PRIMARY KEY (id))]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:122) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$doRun$1(AbstractUpdateCommandStep.java:105) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:184) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:193) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:183) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:162) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.doRun(AbstractUpdateCommandStep.java:104) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.lambda$run$0(AbstractUpdateCommandStep.java:63) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:184) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:193) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:183) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:162) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.command.core.AbstractUpdateCommandStep.run(AbstractUpdateCommandStep.java:62) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.command.core.UpdateCommandStep.run(UpdateCommandStep.java:106) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.command.CommandScope.execute(CommandScope.java:214) ~[liquibase-core-4.24.0.jar:na]
+	... 30 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for changeset db/changelog/db.changelog-createTable.yaml::1::your_liquibase_username:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: тип "long" не существует
+  Позиция: 31 [Failed SQL: (0) CREATE TABLE public.users (id LONG GENERATED BY DEFAULT AS IDENTITY NOT NULL, users_name VARCHAR(100) NOT NULL, last_message_at TEXT NOT NULL, CONSTRAINT users_pkey PRIMARY KEY (id))]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:785) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.executeAcceptedChange(UpdateVisitor.java:118) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:68) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$0(ChangeLogIterator.java:110) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:184) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:193) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:183) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:162) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:250) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:100) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.lambda$child$0(Scope.java:184) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:193) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:183) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:162) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:250) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.Scope.child(Scope.java:254) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:74) ~[liquibase-core-4.24.0.jar:na]
+	... 44 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: тип "long" не существует
+  Позиция: 31 [Failed SQL: (0) CREATE TABLE public.users (id LONG GENERATED BY DEFAULT AS IDENTITY NOT NULL, users_name VARCHAR(100) NOT NULL, last_message_at TEXT NOT NULL, CONSTRAINT users_pkey PRIMARY KEY (id))]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:468) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:77) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:177) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1291) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1273) ~[liquibase-core-4.24.0.jar:na]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:744) ~[liquibase-core-4.24.0.jar:na]
+	... 60 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: тип "long" не существует
+  Позиция: 31
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:335) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:321) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:297) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:292) ~[postgresql-42.6.2.jar:42.6.2]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:462) ~[liquibase-core-4.24.0.jar:na]
+	... 65 common frames omitted
+
+2024-05-23T12:13:46.827+03:00  INFO 14636 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 14636 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:13:46.830+03:00  INFO 14636 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:13:48.047+03:00  INFO 14636 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:13:48.175+03:00  INFO 14636 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:13:49.133+03:00  INFO 14636 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:13:49.152+03:00  INFO 14636 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:13:49.153+03:00  INFO 14636 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:13:49.238+03:00  INFO 14636 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:13:49.238+03:00  INFO 14636 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2308 ms
+2024-05-23T12:13:49.493+03:00  INFO 14636 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:13:49.779+03:00  INFO 14636 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5eabff6b
+2024-05-23T12:13:49.781+03:00  INFO 14636 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:13:50.009+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.database                       : Set default schema name to public
+2024-05-23T12:13:50.930+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:13:51.082+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-23T12:13:51.084+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.command                        : Using deploymentId: 6455631084
+2024-05-23T12:13:51.087+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:13:51.158+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.changelog                      : Table users created
+2024-05-23T12:13:51.161+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-createTable.yaml::1::your_liquibase_username ran successfully in 42ms
+2024-05-23T12:13:51.223+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.changelog                      : Table messages created
+2024-05-23T12:13:51.224+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-createTable.yaml::2::your_liquibase_username ran successfully in 35ms
+2024-05-23T12:13:51.236+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-23T12:13:51.237+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.util                           : Run:                          2
+2024-05-23T12:13:51.237+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.util                           : Previously run:               0
+2024-05-23T12:13:51.238+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.util                           : Filtered out:                 0
+2024-05-23T12:13:51.238+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.util                           : -------------------------------
+2024-05-23T12:13:51.238+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.util                           : Total change sets:            2
+2024-05-23T12:13:51.238+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.util                           : Update summary generated
+2024-05-23T12:13:51.241+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.command                        : Update command completed successfully.
+2024-05-23T12:13:51.246+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-23T12:13:51.248+03:00  INFO 14636 --- [TelegramBot] [main] liquibase.command                        : Command execution complete
+2024-05-23T12:13:51.940+03:00  INFO 14636 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:13:53.209+03:00  INFO 14636 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:13:53.514+03:00  INFO 14636 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T12:13:53.961+03:00  WARN 14636 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:13:54.098+03:00 DEBUG 14636 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:13:54.249+03:00 DEBUG 14636 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:13:54.296+03:00 DEBUG 14636 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:13:54.361+03:00 DEBUG 14636 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:13:54.669+03:00  INFO 14636 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:13:56.940+03:00  INFO 14636 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:13:56.941+03:00  INFO 14636 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 10.718 seconds (process running for 11.27)
+2024-05-23T12:14:18.493+03:00  INFO 14636 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:14:18.499+03:00  INFO 14636 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:14:18.527+03:00  INFO 14636 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:14:26.645+03:00  INFO 27184 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 27184 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:14:26.649+03:00  INFO 27184 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:14:27.898+03:00  INFO 27184 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:14:28.039+03:00  INFO 27184 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:14:29.045+03:00  INFO 27184 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:14:29.065+03:00  INFO 27184 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:14:29.065+03:00  INFO 27184 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:14:29.164+03:00  INFO 27184 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:14:29.164+03:00  INFO 27184 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2426 ms
+2024-05-23T12:14:29.416+03:00  INFO 27184 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:14:29.795+03:00  INFO 27184 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5eabff6b
+2024-05-23T12:14:29.798+03:00  INFO 27184 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:14:30.066+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.database                       : Set default schema name to public
+2024-05-23T12:14:31.075+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:14:31.196+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:14:31.208+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-23T12:14:31.208+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.util                           : Run:                          0
+2024-05-23T12:14:31.209+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.util                           : Previously run:               2
+2024-05-23T12:14:31.209+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.util                           : Filtered out:                 0
+2024-05-23T12:14:31.209+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.util                           : -------------------------------
+2024-05-23T12:14:31.209+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.util                           : Total change sets:            2
+2024-05-23T12:14:31.209+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.util                           : Update summary generated
+2024-05-23T12:14:31.238+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-23T12:14:31.241+03:00  INFO 27184 --- [TelegramBot] [main] liquibase.command                        : Command execution complete
+2024-05-23T12:14:31.959+03:00  INFO 27184 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:14:33.389+03:00  INFO 27184 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:14:33.652+03:00  INFO 27184 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T12:14:34.152+03:00  WARN 27184 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:14:34.306+03:00 DEBUG 27184 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:14:34.521+03:00 DEBUG 27184 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:14:34.567+03:00 DEBUG 27184 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:14:34.617+03:00 DEBUG 27184 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:14:34.870+03:00  INFO 27184 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:14:36.845+03:00  INFO 27184 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:14:36.847+03:00  INFO 27184 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 10.894 seconds (process running for 11.463)
+2024-05-23T12:14:44.453+03:00  INFO 27184 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:14:44.457+03:00  INFO 27184 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:14:44.480+03:00  INFO 27184 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:14:44.470+03:00  WARN 27184 --- [TelegramBot] [pool-3-thread-1] com.zaxxer.hikari.pool.ProxyConnection   : HikariPool-1 - Connection org.postgresql.jdbc.PgConnection@5eabff6b marked as broken because of SQLSTATE(08003), ErrorCode(0)
+
+org.postgresql.util.PSQLException: Соединение уже было закрыто
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:993) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgConnection.rollback(PgConnection.java:1000) ~[postgresql-42.6.2.jar:42.6.2]
+	at com.zaxxer.hikari.pool.ProxyConnection.rollback(ProxyConnection.java:385) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyConnection.rollback(HikariProxyConnection.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.rollback(AbstractLogicalConnectionImplementor.java:121) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.rollback(JdbcResourceLocalTransactionCoordinatorImpl.java:290) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.rollback(TransactionImpl.java:142) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doRollback(JpaTransactionManager.java:589) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processRollback(AbstractPlatformTransactionManager.java:896) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.rollback(AbstractPlatformTransactionManager.java:865) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:694) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:396) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy119.deleteAll(Unknown Source) ~[na:na]
+	at com.example.TelegramBot.Service.DailyDomainsService.deleteAll(DailyDomainsService.java:53) ~[classes/:na]
+	at com.example.TelegramBot.CounterTelegramBot.getDaily_domains(CounterTelegramBot.java:255) ~[classes/:na]
+	at com.example.TelegramBot.DailyEventBot.run(DailyEventBot.java:20) ~[classes/:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+
+2024-05-23T12:21:17.975+03:00  INFO 7932 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 7932 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:21:17.979+03:00  INFO 7932 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:21:19.424+03:00  INFO 7932 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:21:19.553+03:00  INFO 7932 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:21:20.940+03:00  INFO 7932 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:21:20.961+03:00  INFO 7932 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:21:20.962+03:00  INFO 7932 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:21:21.063+03:00  INFO 7932 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:21:21.063+03:00  INFO 7932 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2981 ms
+2024-05-23T12:21:21.315+03:00  INFO 7932 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:21:21.638+03:00  INFO 7932 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7af443a3
+2024-05-23T12:21:21.642+03:00  INFO 7932 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:21:21.948+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.database                       : Set default schema name to public
+2024-05-23T12:21:22.939+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:21:23.128+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-23T12:21:23.131+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.command                        : Using deploymentId: 6456083130
+2024-05-23T12:21:23.133+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:21:23.218+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.changelog                      : Table daily_domains created
+2024-05-23T12:21:23.221+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-createTable.yaml::3::your_liquibase_username ran successfully in 36ms
+2024-05-23T12:21:23.238+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-23T12:21:23.239+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.util                           : Run:                          1
+2024-05-23T12:21:23.239+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.util                           : Previously run:               2
+2024-05-23T12:21:23.240+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.util                           : Filtered out:                 0
+2024-05-23T12:21:23.240+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.util                           : -------------------------------
+2024-05-23T12:21:23.240+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.util                           : Total change sets:            3
+2024-05-23T12:21:23.240+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.util                           : Update summary generated
+2024-05-23T12:21:23.243+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.command                        : Update command completed successfully.
+2024-05-23T12:21:23.247+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-23T12:21:23.248+03:00  INFO 7932 --- [TelegramBot] [main] liquibase.command                        : Command execution complete
+2024-05-23T12:21:23.885+03:00  INFO 7932 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:21:25.081+03:00  INFO 7932 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:21:25.348+03:00  INFO 7932 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом на внешний сервер
+2024-05-23T12:21:25.780+03:00  WARN 7932 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:21:25.919+03:00 DEBUG 7932 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:21:26.071+03:00 DEBUG 7932 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:21:26.117+03:00 DEBUG 7932 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:21:26.167+03:00 DEBUG 7932 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:21:26.475+03:00  INFO 7932 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:21:28.539+03:00  INFO 7932 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:21:28.541+03:00  INFO 7932 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 11.18 seconds (process running for 11.719)
+2024-05-23T12:21:54.758+03:00  INFO 7932 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T12:21:54.770+03:00 ERROR 7932 --- [TelegramBot] [pool-3-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ОШИБКА: отношение "users" не существует
+  Позиция: 58
+2024-05-23T12:24:48.698+03:00  INFO 7932 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:24:48.700+03:00  INFO 7932 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:24:48.706+03:00  INFO 7932 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:24:55.095+03:00  INFO 15864 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 15864 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:24:55.098+03:00  INFO 15864 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:24:57.058+03:00  INFO 15864 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:24:57.165+03:00  INFO 15864 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:24:57.944+03:00  INFO 15864 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:24:57.961+03:00  INFO 15864 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:24:57.961+03:00  INFO 15864 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:24:58.031+03:00  INFO 15864 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:24:58.032+03:00  INFO 15864 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2805 ms
+2024-05-23T12:24:58.232+03:00  INFO 15864 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:24:58.498+03:00  INFO 15864 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4751e8b9
+2024-05-23T12:24:58.500+03:00  INFO 15864 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:24:58.651+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.database                       : Set default schema name to public
+2024-05-23T12:24:59.468+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:24:59.523+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:24:59.530+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-23T12:24:59.531+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.util                           : Run:                          0
+2024-05-23T12:24:59.531+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.util                           : Previously run:               3
+2024-05-23T12:24:59.531+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.util                           : Filtered out:                 0
+2024-05-23T12:24:59.531+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.util                           : -------------------------------
+2024-05-23T12:24:59.531+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.util                           : Total change sets:            3
+2024-05-23T12:24:59.531+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.util                           : Update summary generated
+2024-05-23T12:24:59.557+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-23T12:24:59.559+03:00  INFO 15864 --- [TelegramBot] [main] liquibase.command                        : Command execution complete
+2024-05-23T12:25:00.099+03:00  INFO 15864 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:25:01.478+03:00  INFO 15864 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:25:01.788+03:00  INFO 15864 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом c внешнего сервера
+2024-05-23T12:25:02.151+03:00  WARN 15864 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:25:02.278+03:00 DEBUG 15864 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:25:02.486+03:00 DEBUG 15864 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:25:02.527+03:00 DEBUG 15864 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:25:02.576+03:00 DEBUG 15864 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:25:02.839+03:00  INFO 15864 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:25:03.386+03:00  INFO 15864 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:25:03.386+03:00  INFO 15864 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 8.959 seconds (process running for 9.458)
+2024-05-23T12:25:31.735+03:00  INFO 15864 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T12:25:31.746+03:00 ERROR 15864 --- [TelegramBot] [pool-3-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ОШИБКА: отношение "users" не существует
+  Позиция: 58
+2024-05-23T12:26:42.685+03:00  INFO 15864 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:26:42.688+03:00  INFO 15864 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:26:42.695+03:00  INFO 15864 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:26:47.427+03:00  INFO 11936 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 11936 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:26:47.430+03:00  INFO 11936 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:26:48.386+03:00  INFO 11936 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:26:48.484+03:00  INFO 11936 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:26:49.228+03:00  INFO 11936 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:26:49.246+03:00  INFO 11936 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:26:49.246+03:00  INFO 11936 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:26:49.330+03:00  INFO 11936 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:26:49.330+03:00  INFO 11936 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1824 ms
+2024-05-23T12:26:49.527+03:00  INFO 11936 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:26:49.771+03:00  INFO 11936 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7af443a3
+2024-05-23T12:26:49.773+03:00  INFO 11936 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:26:49.932+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.database                       : Set default schema name to public
+2024-05-23T12:26:50.660+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:26:50.709+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:26:50.717+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-23T12:26:50.718+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.util                           : Run:                          0
+2024-05-23T12:26:50.718+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.util                           : Previously run:               2
+2024-05-23T12:26:50.718+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.util                           : Filtered out:                 0
+2024-05-23T12:26:50.718+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.util                           : -------------------------------
+2024-05-23T12:26:50.718+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.util                           : Total change sets:            2
+2024-05-23T12:26:50.718+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.util                           : Update summary generated
+2024-05-23T12:26:50.742+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-23T12:26:50.743+03:00  INFO 11936 --- [TelegramBot] [main] liquibase.command                        : Command execution complete
+2024-05-23T12:26:51.240+03:00  INFO 11936 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:26:52.236+03:00  INFO 11936 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:26:52.429+03:00  INFO 11936 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом c внешнего сервера
+2024-05-23T12:26:52.767+03:00  WARN 11936 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:26:52.908+03:00 DEBUG 11936 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:26:53.025+03:00 DEBUG 11936 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:26:53.059+03:00 DEBUG 11936 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:26:53.125+03:00 DEBUG 11936 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:26:53.333+03:00  INFO 11936 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:26:53.888+03:00  INFO 11936 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:26:53.889+03:00  INFO 11936 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 6.968 seconds (process running for 7.417)
+2024-05-23T12:27:16.279+03:00  INFO 11936 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T12:27:16.292+03:00 ERROR 11936 --- [TelegramBot] [pool-3-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ОШИБКА: отношение "users" не существует
+  Позиция: 58
+2024-05-23T12:27:43.928+03:00  INFO 11936 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:27:43.930+03:00  INFO 11936 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:27:43.937+03:00  INFO 11936 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:27:52.373+03:00  INFO 26400 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 26400 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:27:52.376+03:00  INFO 26400 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:27:53.462+03:00  INFO 26400 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:27:53.558+03:00  INFO 26400 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:27:54.360+03:00  INFO 26400 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:27:54.377+03:00  INFO 26400 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:27:54.378+03:00  INFO 26400 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:27:54.458+03:00  INFO 26400 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:27:54.459+03:00  INFO 26400 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1992 ms
+2024-05-23T12:27:54.644+03:00  INFO 26400 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:27:54.897+03:00  INFO 26400 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f379769
+2024-05-23T12:27:54.899+03:00  INFO 26400 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:27:55.053+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.database                       : Set default schema name to public
+2024-05-23T12:27:55.841+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:27:55.916+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:27:55.928+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-23T12:27:55.929+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.util                           : Run:                          0
+2024-05-23T12:27:55.929+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.util                           : Previously run:               3
+2024-05-23T12:27:55.929+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.util                           : Filtered out:                 0
+2024-05-23T12:27:55.929+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.util                           : -------------------------------
+2024-05-23T12:27:55.929+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.util                           : Total change sets:            3
+2024-05-23T12:27:55.930+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.util                           : Update summary generated
+2024-05-23T12:27:55.967+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-23T12:27:55.971+03:00  INFO 26400 --- [TelegramBot] [main] liquibase.command                        : Command execution complete
+2024-05-23T12:27:56.552+03:00  INFO 26400 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:27:57.672+03:00  INFO 26400 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:27:57.870+03:00  INFO 26400 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом c внешнего сервера
+2024-05-23T12:27:58.353+03:00  WARN 26400 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:27:58.458+03:00 DEBUG 26400 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:27:58.588+03:00 DEBUG 26400 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:27:58.626+03:00 DEBUG 26400 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:27:58.667+03:00 DEBUG 26400 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:27:58.849+03:00  INFO 26400 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:27:59.416+03:00  INFO 26400 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:27:59.417+03:00  INFO 26400 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 7.655 seconds (process running for 8.16)
+2024-05-23T12:28:07.140+03:00 ERROR 26400 --- [TelegramBot] [pool-3-thread-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : ОШИБКА: отношение "daily_domains" не существует
+  Позиция: 197
+2024-05-23T12:30:10.955+03:00  INFO 26400 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:30:10.957+03:00  INFO 26400 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:30:10.967+03:00  INFO 26400 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:30:16.073+03:00  INFO 12700 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 12700 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:30:16.076+03:00  INFO 12700 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:30:17.394+03:00  INFO 12700 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:30:17.502+03:00  INFO 12700 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:30:18.210+03:00  INFO 12700 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:30:18.227+03:00  INFO 12700 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:30:18.227+03:00  INFO 12700 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:30:18.296+03:00  INFO 12700 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:30:18.296+03:00  INFO 12700 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2152 ms
+2024-05-23T12:30:18.466+03:00  INFO 12700 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:30:18.711+03:00  INFO 12700 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4da1f38a
+2024-05-23T12:30:18.713+03:00  INFO 12700 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:30:18.845+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.database                       : Set default schema name to public
+2024-05-23T12:30:19.580+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:30:19.687+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-23T12:30:19.689+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.command                        : Using deploymentId: 6456619688
+2024-05-23T12:30:19.691+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:30:19.744+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.changelog                      : Table users created
+2024-05-23T12:30:19.746+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-createTable.yaml::1::your_liquibase_username ran successfully in 25ms
+2024-05-23T12:30:19.768+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.changelog                      : Table messages created
+2024-05-23T12:30:19.769+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-createTable.yaml::2::your_liquibase_username ran successfully in 14ms
+2024-05-23T12:30:19.801+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.changelog                      : Table daily_domains created
+2024-05-23T12:30:19.803+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-createTable.yaml::3::your_liquibase_username ran successfully in 23ms
+2024-05-23T12:30:19.812+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-23T12:30:19.812+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.util                           : Run:                          3
+2024-05-23T12:30:19.813+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.util                           : Previously run:               0
+2024-05-23T12:30:19.813+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.util                           : Filtered out:                 0
+2024-05-23T12:30:19.813+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.util                           : -------------------------------
+2024-05-23T12:30:19.813+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.util                           : Total change sets:            3
+2024-05-23T12:30:19.813+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.util                           : Update summary generated
+2024-05-23T12:30:19.815+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.command                        : Update command completed successfully.
+2024-05-23T12:30:19.820+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-23T12:30:19.823+03:00  INFO 12700 --- [TelegramBot] [main] liquibase.command                        : Command execution complete
+2024-05-23T12:30:20.346+03:00  INFO 12700 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:30:21.345+03:00  INFO 12700 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:30:21.544+03:00  INFO 12700 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом c внешнего сервера
+2024-05-23T12:30:21.922+03:00  WARN 12700 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:30:22.058+03:00 DEBUG 12700 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:30:22.219+03:00 DEBUG 12700 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:30:22.250+03:00 DEBUG 12700 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:30:22.281+03:00 DEBUG 12700 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:30:22.428+03:00  INFO 12700 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:30:22.925+03:00  INFO 12700 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:30:22.925+03:00  INFO 12700 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 7.558 seconds (process running for 8.275)
+2024-05-23T12:30:53.526+03:00  INFO 12700 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T12:31:05.706+03:00  INFO 12700 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь написал сообщение
+2024-05-23T12:31:05.706+03:00  INFO 12700 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь с id - 5301097060 написал новое сообщение
+2024-05-23T12:31:05.908+03:00  INFO 12700 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Анализ записи
+2024-05-23T12:31:05.957+03:00 ERROR 12700 --- [TelegramBot] [MsocialPracticBot Telegram Executor] o.h.engine.jdbc.spi.SqlExceptionHelper   : ОШИБКА: столбец "message_text" в таблице "messages" не существует
+  Позиция: 32
+2024-05-23T12:31:05.967+03:00 ERROR 12700 --- [TelegramBot] [MsocialPracticBot Telegram Executor] o.t.t.u.DefaultBotSession                : could not execute statement [ОШИБКА: столбец "message_text" в таблице "messages" не существует
+  Позиция: 32] [insert into messages (users_id,message_text) values (?,?)]; SQL [insert into messages (users_id,message_text) values (?,?)]
+
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not execute statement [ОШИБКА: столбец "message_text" в таблице "messages" не существует
+  Позиция: 32] [insert into messages (users_id,message_text) values (?,?)]; SQL [insert into messages (users_id,message_text) values (?,?)]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:277) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550) ~[spring-orm-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy118.save(Unknown Source) ~[na:na]
+	at com.example.TelegramBot.Service.MessagesService.create(MessagesService.java:22) ~[classes/:na]
+	at com.example.TelegramBot.CounterTelegramBot.botAnswerUtils(CounterTelegramBot.java:105) ~[classes/:na]
+	at com.example.TelegramBot.CounterTelegramBot.onUpdateReceived(CounterTelegramBot.java:87) ~[classes/:na]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) ~[na:na]
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27) ~[telegrambots-meta-6.9.7.1.jar:na]
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:312) ~[telegrambots-6.9.7.1.jar:na]
+Caused by: org.hibernate.exception.SQLGrammarException: could not execute statement [ОШИБКА: столбец "message_text" в таблице "messages" не существует
+  Позиция: 32] [insert into messages (users_id,message_text) values (?,?)]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performInsert(GetGeneratedKeysDelegate.java:107) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable.execute(MutationExecutorPostInsertSingleTable.java:100) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:175) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:113) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2868) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:386) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:300) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:219) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:134) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:754) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:738) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319) ~[spring-orm-6.1.6.jar:6.1.6]
+	at jdk.proxy2/jdk.proxy2.$Proxy113.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618) ~[spring-data-jpa-3.2.5.jar:3.2.5]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.2.5.jar:3.2.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.6.jar:6.1.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.6.jar:6.1.6]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.6.jar:6.1.6]
+	... 13 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: столбец "message_text" в таблице "messages" не существует
+  Позиция: 32
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.6.2.jar:42.6.2]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.6.2.jar:42.6.2]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194) ~[hibernate-core-6.4.4.Final.jar:6.4.4.Final]
+	... 59 common frames omitted
+
+2024-05-23T12:31:48.559+03:00  INFO 12700 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:31:48.561+03:00  INFO 12700 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:31:48.568+03:00  INFO 12700 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:32:59.301+03:00  INFO 25944 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 25944 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:32:59.304+03:00  INFO 25944 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:33:00.279+03:00  INFO 25944 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:33:00.383+03:00  INFO 25944 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:33:01.112+03:00  INFO 25944 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:33:01.126+03:00  INFO 25944 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:33:01.127+03:00  INFO 25944 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:33:01.197+03:00  INFO 25944 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:33:01.198+03:00  INFO 25944 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1808 ms
+2024-05-23T12:33:01.366+03:00  INFO 25944 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:33:01.584+03:00  INFO 25944 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a058be5
+2024-05-23T12:33:01.586+03:00  INFO 25944 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:33:01.738+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.database                       : Set default schema name to public
+2024-05-23T12:33:02.478+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:33:02.584+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully acquired change log lock
+2024-05-23T12:33:02.586+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.command                        : Using deploymentId: 6456782585
+2024-05-23T12:33:02.588+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:33:02.662+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.changelog                      : Table users created
+2024-05-23T12:33:02.664+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-createTable.yaml::1::your_liquibase_username ran successfully in 28ms
+2024-05-23T12:33:02.687+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.changelog                      : Table messages created
+2024-05-23T12:33:02.688+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-createTable.yaml::2::your_liquibase_username ran successfully in 15ms
+2024-05-23T12:33:02.709+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.changelog                      : Table daily_domains created
+2024-05-23T12:33:02.710+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.changelog                      : ChangeSet db/changelog/db.changelog-createTable.yaml::3::your_liquibase_username ran successfully in 12ms
+2024-05-23T12:33:02.717+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-23T12:33:02.717+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.util                           : Run:                          3
+2024-05-23T12:33:02.718+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.util                           : Previously run:               0
+2024-05-23T12:33:02.718+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.util                           : Filtered out:                 0
+2024-05-23T12:33:02.718+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.util                           : -------------------------------
+2024-05-23T12:33:02.718+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.util                           : Total change sets:            3
+2024-05-23T12:33:02.718+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.util                           : Update summary generated
+2024-05-23T12:33:02.720+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.command                        : Update command completed successfully.
+2024-05-23T12:33:02.723+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-23T12:33:02.724+03:00  INFO 25944 --- [TelegramBot] [main] liquibase.command                        : Command execution complete
+2024-05-23T12:33:03.160+03:00  INFO 25944 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:33:04.089+03:00  INFO 25944 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:33:04.269+03:00  INFO 25944 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом c внешнего сервера
+2024-05-23T12:33:04.818+03:00  WARN 25944 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:33:05.135+03:00 DEBUG 25944 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:33:05.237+03:00 DEBUG 25944 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:33:05.276+03:00 DEBUG 25944 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:33:05.359+03:00 DEBUG 25944 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:33:05.724+03:00  INFO 25944 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:33:06.401+03:00  INFO 25944 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:33:06.402+03:00  INFO 25944 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 7.592 seconds (process running for 8.029)
+2024-05-23T12:33:13.868+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь написал сообщение
+2024-05-23T12:33:13.870+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь с id - 5301097060 написал новое сообщение
+2024-05-23T12:33:14.197+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Анализ записи
+2024-05-23T12:33:24.193+03:00  INFO 25944 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000
+2024-05-23T12:33:26.999+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь написал сообщение
+2024-05-23T12:33:26.999+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь использовал "старт"
+2024-05-23T12:33:26.999+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь с id - 5301097060 начал диалог с ботом
+2024-05-23T12:33:27.163+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Запуск бота
+2024-05-23T12:33:27.178+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Создан новый пользователь с id - 5301097060
+2024-05-23T12:33:34.699+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь написал сообщение
+2024-05-23T12:33:34.699+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь использовал "старт"
+2024-05-23T12:33:34.699+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь с id - 5301097060 начал диалог с ботом
+2024-05-23T12:33:34.980+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Запуск бота
+2024-05-23T12:33:34.981+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Создан новый пользователь с id - 5301097060
+2024-05-23T12:33:49.298+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь написал сообщение
+2024-05-23T12:33:49.298+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь с id - 5301097060 написал новое сообщение
+2024-05-23T12:33:49.443+03:00  INFO 25944 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Анализ записи
+2024-05-23T12:35:37.242+03:00  INFO 25944 --- [TelegramBot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:35:37.244+03:00  INFO 25944 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-23T12:35:37.255+03:00  INFO 25944 --- [TelegramBot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-23T12:36:46.620+03:00  INFO 23816 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Starting TelegramBotApplication using Java 19.0.1 with PID 23816 (C:\Учёба\Курс 3\Производственная практика\TelegramBot\target\classes started by Professional in C:\Учёба\Курс 3\Производственная практика\TelegramBot)
+2024-05-23T12:36:46.623+03:00  INFO 23816 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-05-23T12:36:47.560+03:00  INFO 23816 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-23T12:36:47.671+03:00  INFO 23816 --- [TelegramBot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 3 JPA repository interfaces.
+2024-05-23T12:36:48.387+03:00  INFO 23816 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-23T12:36:48.402+03:00  INFO 23816 --- [TelegramBot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-23T12:36:48.402+03:00  INFO 23816 --- [TelegramBot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-23T12:36:48.489+03:00  INFO 23816 --- [TelegramBot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-23T12:36:48.489+03:00  INFO 23816 --- [TelegramBot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1786 ms
+2024-05-23T12:36:48.712+03:00  INFO 23816 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-23T12:36:48.906+03:00  INFO 23816 --- [TelegramBot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@53940e2f
+2024-05-23T12:36:48.908+03:00  INFO 23816 --- [TelegramBot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-23T12:36:49.070+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.database                       : Set default schema name to public
+2024-05-23T12:36:49.793+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:36:49.869+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2024-05-23T12:36:49.877+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.util                           : UPDATE SUMMARY
+2024-05-23T12:36:49.877+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.util                           : Run:                          0
+2024-05-23T12:36:49.877+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.util                           : Previously run:               3
+2024-05-23T12:36:49.877+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.util                           : Filtered out:                 0
+2024-05-23T12:36:49.877+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.util                           : -------------------------------
+2024-05-23T12:36:49.877+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.util                           : Total change sets:            3
+2024-05-23T12:36:49.877+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.util                           : Update summary generated
+2024-05-23T12:36:49.898+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.lockservice                    : Successfully released change log lock
+2024-05-23T12:36:49.899+03:00  INFO 23816 --- [TelegramBot] [main] liquibase.command                        : Command execution complete
+2024-05-23T12:36:50.329+03:00  INFO 23816 --- [TelegramBot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-23T12:36:51.299+03:00  INFO 23816 --- [TelegramBot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-23T12:36:51.487+03:00  INFO 23816 --- [TelegramBot] [pool-3-thread-1] com.example.TelegramBot.DailyEventBot    : Запус процесса сбора данных запросом c внешнего сервера
+2024-05-23T12:36:51.863+03:00  WARN 23816 --- [TelegramBot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-23T12:36:52.005+03:00 DEBUG 23816 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-05-23T12:36:52.103+03:00 DEBUG 23816 --- [TelegramBot] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-23T12:36:52.144+03:00 DEBUG 23816 --- [TelegramBot] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-23T12:36:52.184+03:00 DEBUG 23816 --- [TelegramBot] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-23T12:36:52.361+03:00  INFO 23816 --- [TelegramBot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-05-23T12:36:52.909+03:00  INFO 23816 --- [TelegramBot] [main] com.example.TelegramBot.Initializer      : Бот доступен для обращения
+2024-05-23T12:36:52.910+03:00  INFO 23816 --- [TelegramBot] [main] c.e.TelegramBot.TelegramBotApplication   : Started TelegramBotApplication in 6.76 seconds (process running for 7.2)
+2024-05-23T12:37:01.775+03:00  INFO 23816 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь написал сообщение
+2024-05-23T12:37:01.776+03:00  INFO 23816 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь использовал "старт"
+2024-05-23T12:37:01.776+03:00  INFO 23816 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользователь с id - 5301097060 начал диалог с ботом
+2024-05-23T12:37:01.987+03:00  INFO 23816 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Запуск бота
+2024-05-23T12:37:02.369+03:00  INFO 23816 --- [TelegramBot] [MsocialPracticBot Telegram Executor] c.e.TelegramBot.CounterTelegramBot       : Пользовательс с id был обновлён: 5301097060
+2024-05-23T12:37:17.974+03:00  INFO 23816 --- [TelegramBot] [pool-3-thread-1] c.e.TelegramBot.CounterTelegramBot       : Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: 30000

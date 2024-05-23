@@ -1,0 +1,142 @@
+databaseChangeLog:
+  - logicalFilePath: db/changelog/db.changelog-createTable.yaml
+  - changeSet:
+      id: 1
+      author: your_liquibase_username
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: users_name
+                  type: varchar(100)
+                  autoIncrement: false
+                  constraints:
+                    nullable: false
+              - column:
+                  name: last_message_at
+                  type: text
+                  autoIncrement: false
+                  constraints:
+                    nullable: false
+  - changeSet:
+      id: 2
+      author: your_liquibase_username
+      changes:
+        - createTable:
+            tableName: messages
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: users_id
+                  type: bigint
+                  autoIncrement: false
+                  constraints:
+                    foreignKeyName: fk_messages
+                    references: users(id)
+                    nullable: false
+              - column:
+                  name: messages_text
+                  type: text
+                  autoIncrement: false
+                  constraints:
+                    nullable: false
+  - changeSet:
+      id: 3
+      author: your_liquibase_username
+      changes:
+        - createTable:
+            tableName: daily_domains
+            columns:
+              - column:
+                  name: domain_name
+                  type: varchar(100)
+                  autoIncrement: false
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: hotness
+                  type: int
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
+              - column:
+                  name: price
+                  type: int
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
+              - column:
+                  name: x_value
+                  type: int
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
+              - column:
+                  name: yandex_tic
+                  type: int
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
+              - column:
+                  name: links
+                  type: int
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
+              - column:
+                  name: visitors
+                  type: int
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
+              - column:
+                  name: registrar
+                  type: varchar(100)
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
+              - column:
+                  name: olds
+                  type: int
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
+              - column:
+                  name: delete_date
+                  type: varchar(50)
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
+              - column:
+                  name: rkn
+                  type: boolean
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
+              - column:
+                  name: judicial
+                  type: boolean
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
+              - column:
+                  name: block
+                  type: boolean
+                  autoIncrement: false
+                  constraints:
+                    nullable: true
