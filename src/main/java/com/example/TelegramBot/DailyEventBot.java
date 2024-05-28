@@ -34,7 +34,7 @@ public class DailyEventBot {
     @Autowired
     private MessageDailyEventBot messageDailyEventBot;
 
-    @Scheduled(fixedDelayString = "PT04M")
+    @Scheduled(fixedDelayString = "PT24H")
     public void getDaily_domains() {
         List<Object> list = new ArrayList<>();
         final HttpUriRequest httpUriRequest = new HttpGet("https://backorder.ru/json/?order=desc&expired=1&by=hotness&page=1&items=50");
