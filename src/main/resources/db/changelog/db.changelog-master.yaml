@@ -15,6 +15,12 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
+                  name: id_telegram
+                  type: bigint
+                  autoIncrement: false
+                  constraints:
+                    nullable: false
+              - column:
                   name: users_name
                   type: varchar(100)
                   autoIncrement: false
@@ -62,11 +68,16 @@ databaseChangeLog:
             tableName: daily_domains
             columns:
               - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: false
+                  constraints:
+                    nullable: false
+              - column:
                   name: domain_name
                   type: varchar(100)
                   autoIncrement: false
                   constraints:
-                    primaryKey: true
                     nullable: false
               - column:
                   name: hotness
@@ -140,3 +151,11 @@ databaseChangeLog:
                   autoIncrement: false
                   constraints:
                     nullable: true
+  - changeSet:
+      id: 4
+      author: your_liquibase_username
+      changes:
+        - addUniqueConstraint:
+            columnNames: id_telegram
+            constraintName: constraint_users
+            tableName: users

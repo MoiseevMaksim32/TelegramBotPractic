@@ -4,6 +4,7 @@ import com.example.TelegramBot.Model.DailyDomains;
 import com.example.TelegramBot.Model.Users;
 import com.example.TelegramBot.Repository.DailyDomainsRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,9 +12,9 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class DailyDomainsService {
-
     private DailyDomainsRepository dailyDomainsRepository;
-    public DailyDomains create(DailyDomains model){
+
+    public DailyDomains create(DailyDomains model) {
         DailyDomains dailyDomains = DailyDomains.builder().
                 domainName(model.getDomainName()).
                 hotness(model.getHotness()).
@@ -32,28 +33,29 @@ public class DailyDomainsService {
         return dailyDomainsRepository.save(dailyDomains);
     }
 
-    public List<DailyDomains> readAll(){
-        return dailyDomainsRepository.findAll();
+    public void createAll(List<DailyDomains> list) {
+        dailyDomainsRepository.saveAllAndFlush(list);
     }
 
-    public DailyDomains update(DailyDomains dailyDomains){
+
+    public DailyDomains update(DailyDomains dailyDomains) {
         return dailyDomainsRepository.save(dailyDomains);
     }
 
-    public DailyDomains readById(String id){
+    public DailyDomains readById(Long id) {
         return dailyDomainsRepository.findById(id).orElseThrow(() ->
-                new RuntimeException("В таблицы Roles нет значения с таким: "+id));
+                new RuntimeException("В таблицы Roles нет значения с таким: " + id));
     }
 
-    public void delete(String id){
+    public void delete(Long id) {
         dailyDomainsRepository.deleteById(id);
     }
 
-    public void deleteAll(){
+    public void deleteAll() {
         dailyDomainsRepository.deleteAll();
     }
 
-    public Long countItems(){
-        return  dailyDomainsRepository.count();
+    public Long countItems() {
+        return dailyDomainsRepository.count();
     }
 }

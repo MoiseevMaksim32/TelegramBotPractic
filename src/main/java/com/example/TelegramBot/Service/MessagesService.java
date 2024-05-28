@@ -15,27 +15,28 @@ public class MessagesService {
     private MessagesRepository messagesRepository;
     private UsersService usersService;
 
-    public Messages create(MessagesDTO dto){
-        Messages message = Messages.builder().Users(usersService.readById(dto.getUsers_id()))
+    public Messages create(MessagesDTO dto) {
+        Messages message = Messages.builder().Users(
+                        usersService.readById(dto.getUsers_id()))
                 .messages_text(dto.getMessages_text())
                 .build();
         return messagesRepository.save(message);
     }
 
-    public List<Messages> readAll(){
+    public List<Messages> readAll() {
         return messagesRepository.findAll();
     }
 
-    public Messages update(Messages message){
+    public Messages update(Messages message) {
         return messagesRepository.save(message);
     }
 
-    public Messages readById(Integer id){
+    public Messages readById(Integer id) {
         return messagesRepository.findById(id).orElseThrow(() ->
-                new RuntimeException("В таблицы Roles нет значения с таким: "+id));
+                new RuntimeException("В таблицы Roles нет значения с таким: " + id));
     }
 
-    public void delete(Integer id){
+    public void delete(Integer id) {
         messagesRepository.deleteById(id);
     }
 }

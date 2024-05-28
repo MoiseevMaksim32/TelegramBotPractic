@@ -1,4 +1,5 @@
 package com.example.TelegramBot.Model;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -16,7 +17,7 @@ public class Messages {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @ManyToOne
-    @JoinColumn(name="users_id",nullable = false)
+    @JoinColumn(name = "users_id", nullable = false)
     private Users Users;
     @Column(name = "messages_text", nullable = false)
     private String messages_text;
