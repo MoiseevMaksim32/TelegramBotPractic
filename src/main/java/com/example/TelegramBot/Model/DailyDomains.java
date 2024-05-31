@@ -30,18 +30,6 @@ public class DailyDomains {
     @JsonProperty("price")
     @Column(name = "price", nullable = true)
     private int price;
-    @JsonProperty("x_value")
-    @Column(name = "x_value", nullable = true)
-    private int xValue;
-    @JsonProperty("yandex_tic")
-    @Column(name = "yandex_tic", nullable = true)
-    private int yandexTic;
-    @JsonProperty("links")
-    @Column(name = "links", nullable = true)
-    private int links;
-    @JsonProperty("visitors")
-    @Column(name = "visitors", nullable = true)
-    private int visitors;
     @JsonProperty("registrar")
     @Column(name = "registrar", nullable = true)
     private String registrar;

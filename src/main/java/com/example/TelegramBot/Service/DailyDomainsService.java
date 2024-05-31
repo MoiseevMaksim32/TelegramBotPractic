@@ -1,5 +1,6 @@
 package com.example.TelegramBot.Service;
 
+import com.example.TelegramBot.DTO.DailyDomainsDTO;
 import com.example.TelegramBot.Model.DailyDomains;
 import com.example.TelegramBot.Model.Users;
 import com.example.TelegramBot.Repository.DailyDomainsRepository;
@@ -7,6 +8,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -15,14 +17,12 @@ public class DailyDomainsService {
     private DailyDomainsRepository dailyDomainsRepository;
 
     public DailyDomains create(DailyDomains model) {
+        Long id = dailyDomainsRepository.findByGetLastDailyDomains();
         DailyDomains dailyDomains = DailyDomains.builder().
+                id(++id).
                 domainName(model.getDomainName()).
                 hotness(model.getHotness()).
                 price(model.getPrice()).
-                xValue(model.getXValue()).
-                yandexTic(model.getYandexTic()).
-                links(model.getLinks()).
-                visitors(model.getVisitors()).
                 registrar(model.getRegistrar()).
                 old(model.getOld()).
                 deleteDate(model.getDeleteDate()).
@@ -33,8 +33,25 @@ public class DailyDomainsService {
         return dailyDomainsRepository.save(dailyDomains);
     }
 
-    public void createAll(List<DailyDomains> list) {
-        dailyDomainsRepository.saveAllAndFlush(list);
+    public void createAll(List<DailyDomainsDTO> list) {
+        List<DailyDomains> dailyDomainsList = new ArrayList<>();
+        long id = 1;
+        for(var i: list){
+            DailyDomains dailyDomains = DailyDomains.builder().id(id).
+                    domainName(i.getDomainName()).
+                    hotness(i.getHotness()).
+                    price(i.getPrice()).
+                    registrar(i.getRegistrar()).
+                    old(i.getOld()).
+                    deleteDate(i.getDeleteDate()).
+                    rkn(i.isRkn()).
+                    judicial(i.isJudicial()).
+                    block(i.isBlock()).
+                    build();
+            id++;
+            dailyDomainsList.add(dailyDomains);
+        }
+        dailyDomainsRepository.saveAll(dailyDomainsList);
     }
 
 

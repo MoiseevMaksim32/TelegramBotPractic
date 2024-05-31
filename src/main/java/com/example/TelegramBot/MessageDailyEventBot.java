@@ -16,12 +16,17 @@ import java.util.List;
 @Service
 @Slf4j
 public class MessageDailyEventBot {
+
+    private final CounterTelegramBot bot;
+    private final UsersService usersService;
+
+    private final DailyDomainsService dailyDomainsService;
     @Autowired
-    private CounterTelegramBot bot;
-    @Autowired
-    private UsersService usersService;
-    @Autowired
-    private DailyDomainsService dailyDomainsService;
+    public MessageDailyEventBot(CounterTelegramBot bot, UsersService usersService, DailyDomainsService dailyDomainsService) {
+        this.bot = bot;
+        this.usersService = usersService;
+        this.dailyDomainsService = dailyDomainsService;
+    }
 
     public void messageUsers() {
         List<Users> usersList = usersService.readAll();

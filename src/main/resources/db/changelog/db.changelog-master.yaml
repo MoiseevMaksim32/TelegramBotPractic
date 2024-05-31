@@ -92,30 +92,6 @@ databaseChangeLog:
                   constraints:
                     nullable: true
               - column:
-                  name: x_value
-                  type: int
-                  autoIncrement: false
-                  constraints:
-                    nullable: true
-              - column:
-                  name: yandex_tic
-                  type: int
-                  autoIncrement: false
-                  constraints:
-                    nullable: true
-              - column:
-                  name: links
-                  type: int
-                  autoIncrement: false
-                  constraints:
-                    nullable: true
-              - column:
-                  name: visitors
-                  type: int
-                  autoIncrement: false
-                  constraints:
-                    nullable: true
-              - column:
                   name: registrar
                   type: varchar(100)
                   autoIncrement: false

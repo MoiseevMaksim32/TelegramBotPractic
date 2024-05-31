@@ -1,5 +1,6 @@
 package com.example.TelegramBot;
 
+import com.example.TelegramBot.DTO.DailyDomainsDTO;
 import com.example.TelegramBot.Model.DailyDomains;
 import com.example.TelegramBot.Service.DailyDomainsService;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -29,10 +30,13 @@ import java.util.List;
 public class DailyEventBot {
     final CloseableHttpClient httpClient = HttpClients.createDefault();
     ObjectMapper mapper = new ObjectMapper();
+    private final DailyDomainsService dailyDomainsService;
+    private final MessageDailyEventBot messageDailyEventBot;
     @Autowired
-    DailyDomainsService dailyDomainsService;
-    @Autowired
-    private MessageDailyEventBot messageDailyEventBot;
+    public DailyEventBot(DailyDomainsService dailyDomainsService, MessageDailyEventBot messageDailyEventBot){
+        this.dailyDomainsService =dailyDomainsService;
+        this.messageDailyEventBot =messageDailyEventBot;
+    }
 
     @Scheduled(fixedDelayString = "PT24H")
     public void getDaily_domains() {
@@ -42,19 +46,11 @@ public class DailyEventBot {
             final HttpEntity entity = response.getEntity();
             String jsonString = EntityUtils.toString(entity);
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-            List<DailyDomains> dailyDomainsList = mapper.readValue(jsonString, new TypeReference<List<DailyDomains>>() {
+            List<DailyDomainsDTO> dailyDomainsList = mapper.readValue(jsonString, new TypeReference<List<DailyDomainsDTO>>() {
             });
+            System.out.println("Количество элементов перед удаление "+ dailyDomainsService.countItems());
             dailyDomainsService.deleteAll();
-            /*Изночально ключ был автоинкрементируемым, но тогда hibernate
-             * кидает исключение на повторяющиеся клучи, при том что в аннотациях
-             * есть явное указание на шаблон создания ключа из postger
-             * так что делаю вывод что шаблон кидает повторяющееся ключи
-             * т.к мы удаляем записи каждый день можно просто присвоить
-             * первчиные ключи самостоятльно*/
-            long id = 0;
-            for (var i : dailyDomainsList) {
-                i.setId(++id);
-            }
+            System.out.println("Количество элементов после удаление "+ dailyDomainsService.countItems());
             dailyDomainsService.createAll(dailyDomainsList);
             messageDailyEventBot.messageUsers();
             log.info("Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: " + dailyDomainsService.countItems());
