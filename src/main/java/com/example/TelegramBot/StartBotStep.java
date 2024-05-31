@@ -23,6 +23,7 @@ public class StartBotStep implements BotStep {
     private final UsersService usersService;
     private final MessagesService messagesService;
 
+    // удалось решить проблему используя отложенную загрузку бина, чего я так сделал с самого начал не знаю
     @Autowired
     public StartBotStep(@Lazy CounterTelegramBot counterTelegramBot, UsersService usersService, MessagesService messagesService) {
         this.counterTelegramBot = counterTelegramBot;
