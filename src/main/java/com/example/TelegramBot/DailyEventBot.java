@@ -48,9 +48,7 @@ public class DailyEventBot {
             mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             List<DailyDomainsDTO> dailyDomainsList = mapper.readValue(jsonString, new TypeReference<List<DailyDomainsDTO>>() {
             });
-            System.out.println("Количество элементов перед удаление "+ dailyDomainsService.countItems());
             dailyDomainsService.deleteAll();
-            System.out.println("Количество элементов после удаление "+ dailyDomainsService.countItems());
             dailyDomainsService.createAll(dailyDomainsList);
             messageDailyEventBot.messageUsers();
             log.info("Записи новых доменов на сегодня были добавлены, общее количество этих записей составило: " + dailyDomainsService.countItems());
